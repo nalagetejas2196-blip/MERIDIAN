@@ -1,4 +1,6 @@
-const API_BASE = "http://localhost:8000/api/v1";
+const API_BASE = window.location.origin.includes("localhost") || window.location.origin.includes("127.0.0.1")
+  ? (window.location.port === "5173" ? "http://localhost:8000/api/v1" : "/api/v1")
+  : "/api/v1";
 
 export interface User {
   id: number;
