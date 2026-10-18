@@ -1,0 +1,28 @@
+# Virtual Environments & Python Caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Databases & Runtime Secrets
+*.db
+*.sqlite3
+.env
+.env.local
+
+# Node & Frontend Build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Editor & OS Metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Vector DB & Embeddings Cache
+chroma_db/
